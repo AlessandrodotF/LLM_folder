@@ -3,14 +3,13 @@ import bs4
 import torch
 from transformers import pipeline
 
-# Evitiamo i warning USER_AGENT settando anche questo (facoltativo)
 os.environ["USER_AGENT"] = "my-crawler/1.0"
 
-# Impostazioni LangChain Studio (solo se vuoi tracciare)
+# Impostazioni LangChain Studio (solo per tracciare)
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
 
-os.environ['LANGCHAIN_API_KEY'] = "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"
+os.environ['LANGCHAIN_API_KEY'] = "#da inserire"
 project_name="meglio"
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
